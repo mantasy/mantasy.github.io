@@ -71,6 +71,15 @@ h1, h2, h3, h4, h5, h6, h7, ul, p{
   float:left;
   padding-left: 1rem;
   text-align: left;
+  -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.project:hover {
+  height: 500px;
+  width: 100%;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
 .project h1 {
@@ -146,7 +155,27 @@ h1, h2, h3, h4, h5, h6, h7, ul, p{
   margin: 1% 1%;
   width: 23%;
   min-height: 270px;
+  overflow: auto;
 }
+
+.simple:hover, .details-1:hover {
+  background-color: #f7921e;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.thoughtful:hover, .details-2:hover {
+  background-color: yellow;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.creative:hover, .details-3:hover {
+  background-color: #66e9ff;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
 .values p {
   width: 90%;
   padding: 20px 5px 5px 5px;
@@ -169,34 +198,46 @@ h1, h2, h3, h4, h5, h6, h7, ul, p{
   line-height: 8rem;
 }
 .simple {
-  background-color: #f7921e;
+  background-color: rgb(247, 165, 115);
   color: #3a3b3c;
   font-size: 0.8rem;
+  -webkit-transition: background-color 2s, -webkit-transform 4s;
+  transition: background-color 2s, transform 4s;
 }
 .thoughtful {
   background-color: #fec63d;
   color: #3a3b3c;
   font-size: 0.8rem;
+  -webkit-transition: background-color 2s, -webkit-transform 4s;
+  transition: background-color 4s, transform 4s;
 }
 .creative {
   background-color: #a8e0fa;
   color:  #3a3b3c;
   font-size: 0.8rem;
+  -webkit-transition: background-color 2s, -webkit-transform 4s;
+  transition: background-color 2s, transform 4s;
 }
 .details-1 {
-  background-color: #f7921e;
+  background-color: rgb(247, 165, 115);
   color: #3a3b3c;
   font-size: 1.3rem;
+  -webkit-transition: background-color 2s, -webkit-transform 4s;
+  transition: background-color 2s, transform 4s;
 }
 .details-2{
   background-color: #fec63d;
   color: #3a3b3c;
   font-size: 1.3rem;
+  -webkit-transition: background-color 2s, -webkit-transform 4s;
+  transition: background-color 2s, transform 4s;
 }
 .details-3 {
   background-color: #a8e0fa;
   color:  #3a3b3c;
   font-size: 1.3rem;
+  -webkit-transition: background-color 2s, -webkit-transform 4s;
+  transition: background-color 2s, transform 4s;
 }
 #value, #value h1 {
   background-color: #009bdf;
