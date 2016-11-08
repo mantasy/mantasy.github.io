@@ -76,7 +76,6 @@ h1, h2, h3, h4, h5, h6, h7, ul, p{
 }
 
 .project:hover {
-  height: 500px;
   width: 100%;
   -webkit-transform: rotate(360deg);
   transform: rotate(360deg);
@@ -321,6 +320,9 @@ input {
 }
 
 @media (max-width: 600px) {
+  .project, .project:hover, .simple:hover, .details-1:hover, .thoughtful:hover, .details-2:hover, .creative:hover, .details-3:hover {
+    transition: none !important;
+  }
   .nav-link a{
     font-size: 1.2rem;
   }
