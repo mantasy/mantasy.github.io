@@ -5,6 +5,8 @@ import simple from './assets/simple.png';
 import thoughtful from './assets/thoughtful.png';
 import './App.css';
 import bannerscreenshot from './assets/bannerscreenshot.png';
+import {ValueTitle, ValueDetails} from './values';
+import {ProjectCard} from './projectCard';
 
 class App extends Component {
   constructor(props) {
@@ -42,14 +44,13 @@ class App extends Component {
             </ul>
           </div>
         </section>
-
+        <ProjectCard
+          childId="f1_card"
+          className="project project1" parentId="f1_container"
+          frontText="4050 Yonge St "
+          backText="here is more text on the back!"
+        />
         <section id="projects">
-          <div
-            className="project project1"
-          >
-            <h1>4050 Yonge St </h1>
-            <h2>RFP Proposal </h2>
-          </div>
 
           <div
             className="project project2"
@@ -65,7 +66,7 @@ class App extends Component {
           <div
             className="project project4"
           >
-            <h1>proj4</h1>
+            <h1>proj4</h1>n
           </div>
           <div
             className="project project5"
@@ -95,45 +96,32 @@ class App extends Component {
         </section>
 
         <section id="values">
-          <div className="values" id="core">
-            <h1>Core </h1>
-          </div>
-
-          <div
+          <ValueTitle id="core" word="Core" />
+          <ValueDetails
             className="values simple"
-          >
-            <img src={simple} className = "values-img"/>
-          </div>
-          <div
+            imgSrc={simple}
+          />
+          <ValueDetails
             className="values thoughtful"
-          >
-            <img src={thoughtful} className="values-img"/>
-          </div>
-          <div
+            imgSrc={thoughtful}
+          />
+          <ValueDetails
             className="values creative"
-          >
-            <img src={creative} className="values-img"/>
-          </div>
-          <div
+            imgSrc={creative}
+          />
+          <ValueDetails
             className="values details-1"
-          >
-            <p>Expressing ideas and concepts is difficult; <br />Good visual design is a language. <br /> Communication is intuive, live, and tactile.</p>
-          </div>
-          <div
+            valueDetails="Expressing ideas and concepts is difficult; Good visual design is a language. Communication is intuive, live, and tactile."
+          />
+          <ValueDetails
             className="values details-2"
-          >
-            <p>Recognizing the need is the primary conditions for design. <br />Listening, observing, understanding, sympathizing and, empathizing allows us to glean insights from what was previously not seen.</p>
-          </div>
-          <div
+            valueDetails="Recognizing the need is the primary conditions for design. <br />Listening, observing, understanding, sympathizing and, empathizing allows us to glean insights from what was previously not seen."
+          />
+          <ValueDetails
             className="values details-3"
-          >
-            <p>Where do new ideas come from? <br />Contrast creates the opportunity to create unique solutions and answers. Through questions, we derive answers and create new creative opportunies.</p>
-          </div>
-          <div
-            className="values" id="value"
-          >
-            <h1>Values</h1>
-          </div>
+            valueDetails="Where do new ideas come from? Contrast creates the opportunity to create unique solutions and answers. Through questions, we derive answers and create new creative opportunies."
+          />
+          <ValueTitle id="value" word="Values" />
         </section>
 
       <section id="about">

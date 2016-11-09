@@ -75,6 +75,42 @@ h1, h2, h3, h4, h5, h6, h7, ul, p{
   transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
 
+#f1_container {
+  position: relative;
+  margin: 10px auto;
+  width: 450px;
+  height: 281px;
+  z-index: 1;
+}
+#f1_container {
+  perspective: 1000;
+}
+#f1_card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+}
+#f1_container:hover #f1_card {
+  transform: rotateY(180deg);
+  box-shadow: -5px 5px 5px #aaa;
+}
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.face, .back {
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  background-color: #aaa;
+}
+
 .project:hover {
   width: 100%;
   -webkit-transform: rotate(360deg);
@@ -155,18 +191,19 @@ h1, h2, h3, h4, h5, h6, h7, ul, p{
   width: 23%;
   min-height: 270px;
   overflow: auto;
+  -webkit-transition: background-color 1s, box-shadow 1s;
+  transition: background-color 1s, box-shadow 1s;
 }
 
+.values:hover {
+  box-shadow: -5px 5px 5px #aaa;
+}
 .simple:hover, .details-1:hover {
   background-color: #f7921e;
-  -webkit-transform: rotate(360deg);
-  transform: rotate(360deg);
 }
 
 .thoughtful:hover, .details-2:hover {
   background-color: yellow;
-  -webkit-transform: rotate(360deg);
-  transform: rotate(360deg);
 }
 
 .creative:hover, .details-3:hover {
@@ -189,8 +226,19 @@ h1, h2, h3, h4, h5, h6, h7, ul, p{
   top: 35px;
 }
 
-#core, #core h1 {
+#core:hover {
+  background-color: red;
+}
+#value:hover {
+    background-color: #44e4ff;
+}
+#core {
   background-color: #b51218;
+  color: white;
+  -webkit-transition: background-color 1s, box-shadow 1s;
+  transition: background-color 1s, box-shadow 1s;
+}
+#core, #core h1 {
   color: white;
   font-weight: normal;
   font-size: 5rem;
@@ -200,46 +248,50 @@ h1, h2, h3, h4, h5, h6, h7, ul, p{
   background-color: rgb(247, 165, 115);
   color: #3a3b3c;
   font-size: 0.8rem;
-  -webkit-transition: background-color 2s, -webkit-transform 4s;
-  transition: background-color 2s, transform 4s;
+  -webkit-transition: background-color 1s, box-shadow 1s, -webkit-transform 4s;
+  transition: background-color 1s, box-shadow 1s;
 }
 .thoughtful {
   background-color: #fec63d;
   color: #3a3b3c;
   font-size: 0.8rem;
-  -webkit-transition: background-color 2s, -webkit-transform 4s;
-  transition: background-color 4s, transform 4s;
+  -webkit-transition: background-color 1s, box-shadow 1s;
+  transition: background-color 1s, box-shadow 1s;
 }
 .creative {
   background-color: #a8e0fa;
   color:  #3a3b3c;
   font-size: 0.8rem;
-  -webkit-transition: background-color 2s, -webkit-transform 4s;
-  transition: background-color 2s, transform 4s;
+  -webkit-transition: background-color 1s, box-shadow 1s, -webkit-transform 4s;
+  transition: background-color 1s, box-shadow 1s, transform 4s;
 }
 .details-1 {
   background-color: rgb(247, 165, 115);
   color: #3a3b3c;
   font-size: 1.3rem;
-  -webkit-transition: background-color 2s, -webkit-transform 4s;
-  transition: background-color 2s, transform 4s;
+  -webkit-transition: background-color 1s, box-shadow 1s;
+  transition: background-color 1s, box-shadow 1s;
 }
 .details-2{
   background-color: #fec63d;
   color: #3a3b3c;
   font-size: 1.3rem;
-  -webkit-transition: background-color 2s, -webkit-transform 4s;
-  transition: background-color 2s, transform 4s;
+  -webkit-transition: background-color 1s, box-shadow 1s;
+  transition: background-color 1s, box-shadow 1s;
 }
 .details-3 {
   background-color: #a8e0fa;
   color:  #3a3b3c;
   font-size: 1.3rem;
-  -webkit-transition: background-color 2s, -webkit-transform 4s;
-  transition: background-color 2s, transform 4s;
+  -webkit-transition: background-color 1s, box-shadow 1s;
+  transition: background-color 1s, box-shadow 1s;
 }
-#value, #value h1 {
+#value {
   background-color: #009bdf;
+  -webkit-transition: background-color 1s, box-shadow 1s;
+  transition: background-color 1s, box-shadow 1s;
+  }
+#value h1 {
   color: white;
   font-weight: normal;
   font-size: 5rem;
