@@ -71,8 +71,6 @@ h1, h2, h3, h4, h5, h6, h7, ul, p{
   float:left;
   padding-left: 1rem;
   text-align: left;
-  -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
-  transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
 
 #f1_container {
@@ -113,8 +111,6 @@ h1, h2, h3, h4, h5, h6, h7, ul, p{
 
 .project:hover {
   width: 100%;
-  -webkit-transform: rotate(360deg);
-  transform: rotate(360deg);
 }
 
 .project h1 {
@@ -200,16 +196,17 @@ h1, h2, h3, h4, h5, h6, h7, ul, p{
 }
 .simple:hover, .details-1:hover {
   background-color: #f7921e;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
 }
 
 .thoughtful:hover, .details-2:hover {
   background-color: yellow;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
 }
 
 .creative:hover, .details-3:hover {
   background-color: #66e9ff;
-  -webkit-transform: rotate(360deg);
-  transform: rotate(360deg);
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
 }
 
 .values p {
@@ -248,43 +245,43 @@ h1, h2, h3, h4, h5, h6, h7, ul, p{
   background-color: rgb(247, 165, 115);
   color: #3a3b3c;
   font-size: 0.8rem;
-  -webkit-transition: background-color 1s, box-shadow 1s, -webkit-transform 4s;
-  transition: background-color 1s, box-shadow 1s;
+  -webkit-transition: background-color 1s, box-shadow 2s;
+  transition: background-color 1s, box-shadow 2s;
 }
 .thoughtful {
   background-color: #fec63d;
   color: #3a3b3c;
   font-size: 0.8rem;
-  -webkit-transition: background-color 1s, box-shadow 1s;
-  transition: background-color 1s, box-shadow 1s;
+  -webkit-transition: background-color 2s, box-shadow 2s;
+  transition: background-color 1s, box-shadow 2s;
 }
 .creative {
   background-color: #a8e0fa;
   color:  #3a3b3c;
   font-size: 0.8rem;
-  -webkit-transition: background-color 1s, box-shadow 1s, -webkit-transform 4s;
-  transition: background-color 1s, box-shadow 1s, transform 4s;
+  -webkit-transition: background-color 2s, box-shadow 2s;
+  transition: background-color 1s, box-shadow 2s;
 }
 .details-1 {
   background-color: rgb(247, 165, 115);
   color: #3a3b3c;
   font-size: 1.3rem;
-  -webkit-transition: background-color 1s, box-shadow 1s;
-  transition: background-color 1s, box-shadow 1s;
+  -webkit-transition: background-color 2s, box-shadow 2s;
+  transition: background-color 1s, box-shadow 2s;
 }
 .details-2{
   background-color: #fec63d;
   color: #3a3b3c;
   font-size: 1.3rem;
-  -webkit-transition: background-color 1s, box-shadow 1s;
-  transition: background-color 1s, box-shadow 1s;
+  -webkit-transition: background-color 2s, box-shadow 2s;
+  transition: background-color 1s, box-shadow 2s;
 }
 .details-3 {
   background-color: #a8e0fa;
   color:  #3a3b3c;
   font-size: 1.3rem;
-  -webkit-transition: background-color 1s, box-shadow 1s;
-  transition: background-color 1s, box-shadow 1s;
+  -webkit-transition: background-color 2s, box-shadow 2s;
+  transition: background-color 1s, box-shadow 2s;
 }
 #value {
   background-color: #009bdf;

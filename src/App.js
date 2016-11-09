@@ -6,7 +6,7 @@ import thoughtful from './assets/thoughtful.png';
 import './App.css';
 import bannerscreenshot from './assets/bannerscreenshot.png';
 import {ValueTitle, ValueDetails} from './values';
-import {ProjectCard} from './projectCard';
+import ProjectCard from './projectcard';
 
 class App extends Component {
   constructor(props) {
@@ -51,48 +51,38 @@ class App extends Component {
           backText="here is more text on the back!"
         />
         <section id="projects">
-
-          <div
+          <ProjectCard
             className="project project2"
-          >
-            <h1>Hanen</h1>
-            <h2>Calendar </h2>
-          </div>
-          <div
+            title="Hanen"
+            description="Calendar"
+          />
+          <ProjectCard
             className="project project3"
-          >
-            <h1>proj3</h1>
-          </div>
-          <div
+            title="proj 3"
+          />
+          <ProjectCard
             className="project project4"
-          >
-            <h1>proj4</h1>n
-          </div>
-          <div
+          />
+          <ProjectCard
             className="project project5"
-          >
-            <h1>proj5</h1>
-          </div>
-          <div
+            title="proj 5"
+          />
+          <ProjectCard
             className="project project6"
-          >
-            <h1>proj6</h1>
-          </div>
-          <div
+            title="proj 6"
+          />
+          <ProjectCard
             className="project project7"
-          >
-            <h1>proj7</h1>
-          </div>
-          <div
+            title="proj 7"
+          />
+          <ProjectCard
             className="project project8"
-          >
-            <h1>proj8</h1>
-          </div>
-          <div
+            title="proj 8"
+          />
+          <ProjectCard
             className="project project9"
-          >
-            <h1>proj9</h1>
-          </div>
+            title="proj 9"
+          />
         </section>
 
         <section id="values">
