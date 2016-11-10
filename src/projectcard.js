@@ -1,13 +1,18 @@
 import React from 'react';
-
-export default function ProjectCard(props) {
+import creative from './assets/creative.png';
+export function ProjectCard(props) {
   return (
-    <div
-      className={props.className}
-    >
-      {props.title && <h1> {props.title} </h1> }
-      {props.description && <h2>{props.description} </h2> }
+    <div id={props.parentId}>
+      <div id={props.childId} class="shadow">
+        <div class="front face">
+          <img src={creative} style={{ width: "100%", height: "100%", backgroundColor: "yellow"}}/>
+        </div>
+        <div class="back face center">
+          <p>This is nice for exposing more information about an image.</p>
+          <p>Any content can go here.</p>
+        </div>
+      </div>
     </div>
 
-  )
+  );
 }
