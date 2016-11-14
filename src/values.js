@@ -10,10 +10,11 @@ export function ValueTitle(props) {
 
 export function ValueDetails(props) {
   return (
-    <div className={props.className} id={props.id}>
+    <div className={`values ${props.className}`} id={props.id}>
       {props.valueDetails ?
         (<p>{props.valueDetails}</p>) :
-        (<img src={props.imgSrc} className="values-img"/>)
+        (<img src={props.imgSrc} className="values-img" role="presentation"/>)
       }
     </div>
   )
+}
